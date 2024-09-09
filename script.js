@@ -22,7 +22,7 @@ function game() {
   rollBtn.addEventListener('click', randomNumber => {
     img.classList.remove('hidden');
     randomNumber = Math.floor(Math.random() * 6 + 1);
-    img.src = `dice-${randomNumber}.png`;
+    img.src = `images/dice-${randomNumber}.png`;
     const playerWithScore = document.querySelector('.expClass');
     if (randomNumber == 1) {
       player1.textContent = 0;
